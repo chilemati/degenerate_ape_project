@@ -1,0 +1,817 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+@mixin flex {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+@mixin image($url) {
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+// variables
+.container {
+	// padding: 1rem 5%;
+	outline: none;
+	border: none;
+	position: relative;
+}
+body {
+	background: rgb(47, 47, 30);
+	background: -moz-linear-gradient(
+		56deg,
+		rgba(47, 47, 30, 0.9780287114845938) 23%,
+		rgba(45, 37, 17, 0.9248074229691877) 65%,
+		rgba(42, 42, 37, 0.958420868347339) 92%
+	);
+	background: -webkit-linear-gradient(
+		56deg,
+		rgba(47, 47, 30, 0.9780287114845938) 23%,
+		rgba(45, 37, 17, 0.9248074229691877) 65%,
+		rgba(42, 42, 37, 0.958420868347339) 92%
+	);
+	background: linear-gradient(
+		56deg,
+		rgba(47, 47, 30, 0.9780287114845938) 23%,
+		rgba(45, 37, 17, 0.9248074229691877) 65%,
+		rgba(42, 42, 37, 0.958420868347339) 92%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f1e", endColorstr="#2a2a25", GradientType=1);
+}
+.section1 {
+	// border: 2px solid red;
+	width: 100%;
+	height: 130vh;
+	position: relative;
+	.shadow {
+		position: absolute;
+		top: 0px;
+		z-index: 0;
+		width: 100%;
+		height: 130vh;
+		background: rgb(47, 47, 30);
+		background: -moz-linear-gradient(
+			56deg,
+			rgba(47, 47, 30, 0.9780287114845938) 23%,
+			rgba(45, 37, 17, 0.9248074229691877) 65%,
+			rgba(42, 42, 37, 0.958420868347339) 92%
+		);
+		background: -webkit-linear-gradient(
+			56deg,
+			rgba(47, 47, 30, 0.9780287114845938) 23%,
+			rgba(45, 37, 17, 0.9248074229691877) 65%,
+			rgba(42, 42, 37, 0.958420868347339) 92%
+		);
+		background: linear-gradient(
+			56deg,
+			rgba(47, 47, 30, 0.9780287114845938) 23%,
+			rgba(45, 37, 17, 0.9248074229691877) 65%,
+			rgba(42, 42, 37, 0.958420868347339) 92%
+		);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f1e", endColorstr="#2a2a25", GradientType=1);
+
+		.inline {
+			display: flex;
+			align-items: center;
+			align-content: center;
+			justify-content: space-between;
+			margin: 10rem 10% 2rem 10%;
+			.box {
+				// border: 1px solid red;
+				width: 48%;
+				height: 60vh;
+				padding: 1.5rem;
+			}
+			.img {
+				position: relative;
+				z-index: 0;
+				.imgshad {
+					// border: 1px solid green;
+					position: absolute;
+					bottom: -6rem;
+					z-index: 1;
+
+					width: 100%;
+					height: 95vh;
+					@include image("./img/ape5-transformed.png");
+					background-size: 170% 120%;
+					background-position: top 0rem;
+				}
+			}
+
+			.text {
+				position: relative;
+				h4 {
+					color: gold;
+					font-size: 2vw;
+					font-style: italic;
+					margin-bottom: 2rem;
+				}
+				h1 {
+					color: white;
+					font-size: 6vw;
+				}
+				.flex {
+					@include flex();
+					justify-content: left;
+					gap: 1rem;
+					.acca {
+						h1 {
+							color: white;
+							font-size: 5.5vw;
+							text-transform: uppercase;
+						}
+					}
+					.ape {
+						color: gold;
+						padding: 1rem 1.7rem;
+						font-size: 2vw;
+						font-weight: bold;
+						background: rgb(37, 37, 35);
+						background: linear-gradient(
+							90deg,
+							rgba(37, 37, 35, 0.8) 51%,
+							rgba(30, 27, 20, 0) 73%
+						);
+						border-radius: 4px;
+					}
+				}
+				.wallet {
+					position: absolute;
+					bottom: 0.5rem;
+					a {
+						padding: 1rem 1.5rem;
+						background-color: gold;
+						color: black;
+						text-decoration: none;
+						border-radius: 8px;
+					}
+				}
+			}
+		}
+	}
+	.nav {
+		@include flex();
+		margin: 1.5rem 0rem;
+		margin: 3rem 10%;
+		z-index: 2;
+		a {
+			text-decoration: none;
+			font-size: 1.7vw;
+			color: white;
+		}
+		.logo {
+			width: 80px;
+			height: 80px;
+			@include image("./img/ape-logo-transformed.png");
+			background-size: cover;
+		}
+
+		.group {
+			@include flex();
+			gap: 2rem;
+		}
+
+		.wallet {
+			a {
+				padding: 0.7rem 1.5rem;
+				background-color: gold;
+				color: black;
+				border-radius: 10px;
+			}
+		}
+	}
+
+	@include image("./img/ape5-transformed.png");
+	background-size: 95%;
+	background-position: 400% -80px;
+}
+
+.blend1 {
+	width: 100%;
+	height: 10vh;
+	background: rgb(76, 67, 25);
+	background: linear-gradient(
+		180deg,
+		rgba(76, 67, 25, 0) 18%,
+		rgba(19, 19, 19, 1) 75%
+	);
+}
+
+.section2 {
+	.sect2 {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		z-index: 0;
+		background: rgb(20, 20, 20);
+		background: linear-gradient(
+			90deg,
+			rgba(20, 20, 20, 1) 61%,
+			rgba(19, 19, 19, 0.5) 80%
+		);
+		@include flex();
+		.box {
+			// padding: 0rem 10%;
+			position: relative;
+			// border: solid red 1px;
+			height: inherit;
+			width: 45%;
+			font-weight: bold;
+		}
+
+		.img {
+			@include image("./img/ape-police-transformed.png");
+			background-size: 70%;
+			background-position: right -50px;
+			position: relative;
+			z-index: 0;
+		}
+		.inner {
+			position: absolute;
+			right: 38%;
+			bottom: 0rem;
+			width: 450px;
+			height: 450px;
+			box-shadow: 2px -2px 8px #131313, -0px 0px 0px #131313,
+				10px 2px 0px rgb(162, 82, 16, 0.8), -0px -0px 0px #131313;
+			border-radius: 50%;
+			transform: rotate(338deg);
+		}
+		.middle {
+			position: absolute;
+			right: 40.5%;
+			bottom: 4%;
+			width: 400px;
+			height: 400px;
+			box-shadow: 2px -2px 8px #131313, -0px 0px 0px #131313,
+				10px 2px 0px rgb(162, 82, 16, 0.8), -0px -0px 0px #131313;
+			border-radius: 50%;
+			transform: rotate(338deg);
+			border-radius: 50%;
+		}
+
+		.outer {
+			position: absolute;
+			right: 54%;
+			bottom: 8%;
+			width: 200px;
+			height: 200px;
+			box-shadow: -2px 2px 1px #131313, -0px 0px 0px #131313,
+				3px 2px 0px rgb(162, 82, 16, 0.8), -0px -0px 0px #131313;
+			border-radius: 50%;
+			overflow: hidden;
+			@include flex();
+			flex-direction: column;
+			justify-content: center;
+			z-index: 1;
+			background-color: #131313;
+			h1 {
+				margin-bottom: -0.5rem;
+			}
+			transform: translate(50%, -50%);
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: verdana;
+			font-size: 1rem;
+			color: gold;
+			text-shadow: 1px 1px 1px gold, 1px 18px 6px rgba(16, 16, 16, 0.4),
+				1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+				1px 30px 60px rgba(16, 16, 16, 0.4);
+		}
+		.three {
+			font-size: 4rem;
+		}
+		margin-bottom: 0vh;
+	}
+}
+
+.section3 {
+	position: relative;
+	// margin-top: 3rem 10%;
+	width: 100%;
+	height: 120vh;
+	background: rgb(18, 18, 18);
+	background: linear-gradient(
+		180deg,
+		rgba(18, 18, 18, 1) 57%,
+		rgba(40, 37, 22, 1) 87%
+	);
+	// border: red solid 4px;
+	color: white;
+	.center {
+		margin-top: 0rem;
+		padding-top: 2rem;
+		@include flex();
+		justify-content: center;
+		flex-direction: column;
+		h1 {
+			font-size: 5rem;
+		}
+		p {
+			text-align: center;
+		}
+	}
+
+	.gallary {
+		margin-top: 4rem;
+		padding: 1rem 10%;
+		@include flex();
+
+		.card {
+			position: relative;
+			padding: 1.5rem;
+			border-right: 2px solid gold;
+			border-top: 2px solid gold;
+			border-left: 2px solid inherit;
+			border-bottom: 2px solid gold;
+			border-radius: 8px;
+			width: 30%;
+			height: 55vh;
+			text-align: center;
+
+			.img {
+				position: absolute;
+				top: -2rem;
+				left: -1rem;
+				width: 70%;
+				height: 40vh;
+				// border: 1px solid green;
+				border-radius: 8px;
+				margin-bottom: 2rem;
+				box-sizing: 0px 5px 10px inherit;
+				z-index: 1;
+			}
+			.number {
+				position: absolute;
+				bottom: 1.6rem;
+				left: -1rem;
+				// border: 2px solid red;
+				width: 70%;
+				height: 15vh;
+				box-shadow: 0px -0px 90px gold;
+				background-color: rgb(255, 215, 0, 0.35);
+				border-color: gold;
+				border: 1px solid inherit;
+				opacity: 0.7;
+
+				h1 {
+					color: gold;
+					margin-top: 0.5rem;
+				}
+				z-index: 0;
+			}
+			.flex {
+				position: absolute;
+				left: -1rem;
+				bottom: -1rem;
+				// border: 1px solid purple;
+				z-index: 1;
+				box-sizing: 0px 5px 10px #323023;
+				width: 70%;
+				height: max-content;
+				background-color: #323023;
+				border-radius: 8px;
+				div {
+					@include flex();
+					padding: 0.5rem;
+				}
+				p {
+					@include flex();
+				}
+			}
+			.img1 {
+				@include image("./img/ape2.jpg");
+				background-size: cover;
+			}
+			.img2 {
+				@include image("./img/ape7.jpg");
+				background-size: cover;
+			}
+			.img3 {
+				@include image("./img/ape8.png");
+				background-size: cover;
+			}
+		}
+	}
+	.play {
+		@include flex();
+		justify-content: center;
+		margin-top: 3rem;
+		gap: 2rem;
+		.icon2 {
+			font-size: 1.5rem;
+			color: gold;
+			border: 0.5px solid gold;
+			padding: 1rem;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			@include flex();
+			justify-content: center;
+		}
+		.icon1 {
+			font-size: 0.5rem;
+			color: gray;
+			border: 0.5px solid gray;
+			padding: 1rem;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			@include flex();
+			justify-content: center;
+		}
+	}
+}
+
+.section4 {
+	background-color: rgb(76, 67, 25);
+	background: linear-gradient(
+		0deg,
+		rgba(18, 18, 18, 1) 0%,
+		rgba(40, 37, 22, 1) 8%
+	);
+	width: 100%;
+	height: 120vh;
+	color: white;
+	padding: 2rem 10%;
+	.intro {
+		position: relative;
+		z-index: 2;
+		h1 {
+			font-size: 6vw;
+		}
+		p {
+			margin: 1rem 0rem;
+			font-size: 1.5vw;
+		}
+	}
+
+	.parent {
+		position: relative;
+		z-index: 0;
+
+		.child {
+			position: relative;
+			perspective: 50px;
+			z-index: 0;
+			left: 10%;
+
+			width: 100%;
+			@include flex();
+			padding: 2rem 2%;
+			.text {
+				z-index: 0;
+				transform-style: preserve-3d;
+				transform: rotateY(45deg);
+				// border-top: 5px solid rgb(253, 215, 3, 0.8);
+				// border-bottom: 5px solid gold;
+				// border-left: 5px solid gold;
+				box-shadow: 0px -4px 0px gold, 0px 4px 0px gold, -4px 0px 0px gold,
+					0px 0px 0px gold;
+				border-radius: 12px 2% 2% 12px;
+
+				.li {
+					margin: 1.5rem 0rem 0.5rem 3rem;
+					width: fit-content;
+					padding: 1rem 1.5rem;
+					font-size: 1.3rem;
+					@include flex();
+					gap: 3rem;
+					.egg {
+						width: 50px;
+						height: 50px;
+						// border: 1px solid red;
+					}
+					.icon1 {
+						@include image("./img/egg1-transformed.png");
+						background-size: contain;
+					}
+					.icon2 {
+						@include image("./img/egg2-transformed.png");
+						background-size: contain;
+					}
+					.icon3 {
+						@include image("./img/egg3-transformed.png");
+						background-size: contain;
+					}
+
+					&:first-child {
+						background-color: rgba(40, 37, 22, 1);
+						box-shadow: 2px 4px 25px rgb(0, 0, 0, 0.5);
+
+						border-radius: 8px;
+					}
+				}
+				.btn {
+					position: absolute;
+					bottom: 2rem;
+					left: 8%;
+					// border: 3px solid red;
+					height: 10vh;
+					padding: 1rem;
+					button {
+						margin-right: 1rem;
+						padding: 0.5rem 1.2rem;
+						border: 1px solid gold;
+						outline: none;
+						border: none;
+						border-radius: 8px;
+					}
+					.one {
+						background-color: gold;
+					}
+					.two {
+						background-color: inherit;
+						border: 2px solid gold;
+						color: white;
+					}
+				}
+			}
+			.box {
+				z-index: 0;
+				transform: rotateY(-0.3deg);
+				width: 50%;
+				height: 70vh;
+				.figures {
+					position: absolute;
+					z-index: 3;
+					width: 80%;
+					@include flex();
+					bottom: 1rem;
+					right: 2.6rem;
+					// border: 2px solid gold;
+					background-color: rgba(56, 56, 53, 0.5);
+					backdrop-filter: blur(2px);
+					height: max-content;
+					padding: 1rem 1.7rem;
+					border-radius: 13px;
+					.boxx {
+						h3 {
+							color: rgb(172, 164, 164);
+							margin-bottom: 1rem;
+						}
+						p {
+							color: gold;
+						}
+					}
+				}
+			}
+			.img {
+				position: relative;
+				z-index: 1;
+				.imgshad {
+					position: absolute;
+					z-index: 2;
+					top: -14rem;
+					left: -7rem;
+					height: inherit;
+					width: 100%;
+					height: 115vh;
+					background-color: rgb(209, 177, 17, 0.5);
+					// backdrop-filter: blur(80px);
+					background: linear-gradient(
+						180deg,
+						rgba(18, 18, 18, 1) 40%,
+						rgba(40, 37, 22, 1) 80%
+					);
+					// border: 3px solid red;
+
+					@include image("./img/ape5-transformed.png");
+					background-size: 195% 115%;
+					background-position: 51% 90%;
+					border-radius: 50px;
+				}
+			}
+		}
+	}
+}
+
+.section5 {
+	position: relative;
+	background-color: rgb(76, 67, 25);
+	background: linear-gradient(
+		0deg,
+		rgba(18, 18, 18, 1) 40%,
+		rgba(40, 37, 22, 1) 56%,
+		rgba(18, 18, 18, 0.3) 80%
+	);
+	width: 100%;
+	height: 120vh;
+	color: white;
+	padding: 2rem 10%;
+	.flex {
+		@include flex();
+		padding: 4rem 5%;
+		.box {
+			@include flex();
+			gap: 1rem;
+		}
+
+		.title {
+			h1 {
+				font-size: 4vw;
+			}
+		}
+
+		.icon1,
+		.icon2 {
+			width: 50px;
+			height: 50px;
+			border: 1px solid gold;
+			border-radius: 50%;
+			@include flex();
+			justify-content: center;
+			color: gold;
+		}
+		.icon1 {
+			width: 30px;
+			height: 30px;
+			border-color: gray;
+			color: gray;
+		}
+	}
+
+	.gallary {
+		margin-top: 2rem;
+		@include flex();
+
+		.box {
+			border-top: 3px solid gold;
+			border-bottom: 3px solid inherit;
+			border-right: 3px solid gold;
+			border-left: 3px solid gold;
+			width: 30%;
+			height: 70vh;
+			padding: 3rem;
+			// box-shadow: 4px -4px 30px black;
+			border-radius: 12px 12px 5px 5px;
+			position: relative;
+
+			.img {
+				width: 100%;
+				height: 45vh;
+				// border: 1px solid pink;
+				border-radius: 10px 10px 10px 10px;
+				box-shadow: 4px 4px 30px black;
+				background-color: rgb(50, 48, 35, 0.5);
+			}
+			.img1 {
+				@include image("./img/ape3.jpg");
+				background-size: cover;
+			}
+			.img2 {
+				@include image("./img/ape8.png");
+				background-size: cover;
+			}
+			.img3 {
+				@include image("./img/ape6.jpg");
+				background-size: cover;
+			}
+
+			.product {
+				position: absolute;
+				// border: 1px solid red;
+				// box-shadow: 10px 10px 500px gold;
+				margin-top: 1rem;
+				background-color: rgb(50, 48, 35, 0.1);
+				left: 40%;
+				padding: 0.5rem;
+				@include flex();
+				flex-direction: column;
+				gap: 0.5rem;
+				border-radius: 9px;
+				h3 {
+					font-size: 1vw;
+				}
+				p {
+					color: gold;
+					font-size: 1.5vw;
+				}
+			}
+		}
+	}
+	.shad {
+		position: absolute;
+		z-index: 1;
+		width: 80%;
+		height: 10vh;
+		// border: 1px solid blue;
+		background-color: rgba(1, 1, 1, 0.5);
+		background: linear-gradient(
+			0deg,
+			rgba(40, 37, 22, 1) 56%,
+			rgba(18, 18, 18, 1) 90%
+		);
+		bottom: 2rem;
+		// box-shadow: 0px -1px 2px rgb(47, 47, 30);
+		border-radius: 10px;
+	}
+}
+
+.section6 {
+	color: white;
+	padding: 1rem 10%;
+	background-color: rgba(255, 217, 0, 0.1);
+	box-shadow: inset 5px 5px 1000px rgb(0, 0, 0);
+	// @include flex();
+	// justify-content: center;
+	// flex-direction: column;
+	.intro {
+		text-align: center;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+		h1 {
+			font-size: 4.5rem;
+			font-weight: bold;
+		}
+		p {
+			font-size: 1rem;
+			margin: 1rem 0rem;
+			color: gray;
+		}
+	}
+	.quest {
+		@include flex();
+		border: 2px solid gold;
+		border-radius: 12px;
+		width: 80%;
+		padding: 2rem 3rem;
+		font-size: 2.5vw;
+		margin: 2rem 10%;
+		.plus {
+			i {
+				font-size: 5rem;
+			}
+		}
+	}
+}
+
+.footer {
+	color: white;
+	padding: 1rem 10%;
+	background-color: rgba(255, 217, 0, 0.1);
+	box-shadow: inset 5px 5px 1000px rgb(0, 0, 0);
+	border-top: 1px solid gray;
+	padding: 4rem 10%;
+	.flex {
+		@include flex();
+		.a {
+			@include flex();
+			h1 {
+				color: gold;
+			}
+			.logo {
+				width: 60px;
+				height: 60px;
+				@include image("./img/ape-logo-transformed.png");
+				background-size: cover;
+			}
+		}
+		.b {
+			@include flex();
+			justify-content: left;
+			gap: 2rem;
+			div {
+				border: 1px solid gold;
+				padding: 0.5rem;
+				border-radius: 8px;
+				color: gold;
+				font-size: 2rem;
+			}
+			.inp {
+				padding: 0px;
+				border: none;
+				background-color: none;
+				input {
+					border: 1px solid gold;
+					background-color: rgb(34, 33, 33, 0.5);
+					outline: none;
+					padding: 1rem 1.8rem;
+					border-radius: 8px;
+					margin-left: -13%;
+					font-synthesis: 2.1rem;
+				}
+			}
+			.twitter,
+			.discord {
+				background-color: rgb(34, 33, 33, 0.5);
+				border: none;
+			}
+			.msg {
+				background-color: rgb(34, 33, 33, 0.5);
+			}
+		}
+	}
+	.c {
+		@include flex();
+	}
+}

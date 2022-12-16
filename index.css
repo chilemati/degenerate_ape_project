@@ -1,0 +1,778 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  outline: none;
+  border: none;
+  position: relative;
+}
+
+body {
+  background: rgb(47, 47, 30);
+  background: -moz-linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  background: -webkit-linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  background: linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f1e", endColorstr="#2a2a25", GradientType=1);
+}
+
+.section1 {
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  background-image: url("./img/ape5-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+  background-position: 400% -80px;
+}
+.section1 .shadow {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 130vh;
+  background: rgb(47, 47, 30);
+  background: -moz-linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  background: -webkit-linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  background: linear-gradient(56deg, rgba(47, 47, 30, 0.9780287115) 23%, rgba(45, 37, 17, 0.924807423) 65%, rgba(42, 42, 37, 0.9584208683) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f1e", endColorstr="#2a2a25", GradientType=1);
+}
+.section1 .shadow .inline {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 10rem 10% 2rem 10%;
+}
+.section1 .shadow .inline .box {
+  width: 48%;
+  height: 60vh;
+  padding: 1.5rem;
+}
+.section1 .shadow .inline .img {
+  position: relative;
+  z-index: 0;
+}
+.section1 .shadow .inline .img .imgshad {
+  position: absolute;
+  bottom: -6rem;
+  z-index: 1;
+  width: 100%;
+  height: 95vh;
+  background-image: url("./img/ape5-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 170% 120%;
+  background-position: top 0rem;
+}
+.section1 .shadow .inline .text {
+  position: relative;
+}
+.section1 .shadow .inline .text h4 {
+  color: gold;
+  font-size: 2vw;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.section1 .shadow .inline .text h1 {
+  color: white;
+  font-size: 6vw;
+}
+.section1 .shadow .inline .text .flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: left;
+  gap: 1rem;
+}
+.section1 .shadow .inline .text .flex .acca h1 {
+  color: white;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+}
+.section1 .shadow .inline .text .flex .ape {
+  color: gold;
+  padding: 1rem 1.7rem;
+  font-size: 2vw;
+  font-weight: bold;
+  background: rgb(37, 37, 35);
+  background: linear-gradient(90deg, rgba(37, 37, 35, 0.8) 51%, rgba(30, 27, 20, 0) 73%);
+  border-radius: 4px;
+}
+.section1 .shadow .inline .text .wallet {
+  position: absolute;
+  bottom: 0.5rem;
+}
+.section1 .shadow .inline .text .wallet a {
+  padding: 1rem 1.5rem;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.section1 .nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 1.5rem 0rem;
+  margin: 3rem 10%;
+  z-index: 2;
+}
+.section1 .nav a {
+  text-decoration: none;
+  font-size: 1.7vw;
+  color: white;
+}
+.section1 .nav .logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("./img/ape-logo-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section1 .nav .group {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.section1 .nav .wallet a {
+  padding: 0.7rem 1.5rem;
+  background-color: gold;
+  color: black;
+  border-radius: 10px;
+}
+
+.blend1 {
+  width: 100%;
+  height: 10vh;
+  background: rgb(76, 67, 25);
+  background: linear-gradient(180deg, rgba(76, 67, 25, 0) 18%, rgb(19, 19, 19) 75%);
+}
+
+.section2 .sect2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(90deg, rgb(20, 20, 20) 61%, rgba(19, 19, 19, 0.5) 80%);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 0vh;
+}
+.section2 .sect2 .box {
+  position: relative;
+  height: inherit;
+  width: 45%;
+  font-weight: bold;
+}
+.section2 .sect2 .img {
+  background-image: url("./img/ape-police-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  background-position: right -50px;
+  position: relative;
+  z-index: 0;
+}
+.section2 .sect2 .inner {
+  position: absolute;
+  right: 38%;
+  bottom: 0rem;
+  width: 450px;
+  height: 450px;
+  box-shadow: 2px -2px 8px #131313, 0px 0px 0px #131313, 10px 2px 0px rgba(162, 82, 16, 0.8), 0px 0px 0px #131313;
+  border-radius: 50%;
+  transform: rotate(338deg);
+}
+.section2 .sect2 .middle {
+  position: absolute;
+  right: 40.5%;
+  bottom: 4%;
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px -2px 8px #131313, 0px 0px 0px #131313, 10px 2px 0px rgba(162, 82, 16, 0.8), 0px 0px 0px #131313;
+  border-radius: 50%;
+  transform: rotate(338deg);
+  border-radius: 50%;
+}
+.section2 .sect2 .outer {
+  position: absolute;
+  right: 54%;
+  bottom: 8%;
+  width: 200px;
+  height: 200px;
+  box-shadow: -2px 2px 1px #131313, 0px 0px 0px #131313, 3px 2px 0px rgba(162, 82, 16, 0.8), 0px 0px 0px #131313;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  background-color: #131313;
+  transform: translate(50%, -50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: verdana;
+  font-size: 1rem;
+  color: gold;
+  text-shadow: 1px 1px 1px gold, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+.section2 .sect2 .outer h1 {
+  margin-bottom: -0.5rem;
+}
+.section2 .sect2 .three {
+  font-size: 4rem;
+}
+
+.section3 {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(180deg, rgb(18, 18, 18) 57%, rgb(40, 37, 22) 87%);
+  color: white;
+}
+.section3 .center {
+  margin-top: 0rem;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+}
+.section3 .center h1 {
+  font-size: 5rem;
+}
+.section3 .center p {
+  text-align: center;
+}
+.section3 .gallary {
+  margin-top: 4rem;
+  padding: 1rem 10%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.section3 .gallary .card {
+  position: relative;
+  padding: 1.5rem;
+  border-right: 2px solid gold;
+  border-top: 2px solid gold;
+  border-left: 2px solid inherit;
+  border-bottom: 2px solid gold;
+  border-radius: 8px;
+  width: 30%;
+  height: 55vh;
+  text-align: center;
+}
+.section3 .gallary .card .img {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  width: 70%;
+  height: 40vh;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-sizing: 0px 5px 10px inherit;
+  z-index: 1;
+}
+.section3 .gallary .card .number {
+  position: absolute;
+  bottom: 1.6rem;
+  left: -1rem;
+  width: 70%;
+  height: 15vh;
+  box-shadow: 0px 0px 90px gold;
+  background-color: rgba(255, 215, 0, 0.35);
+  border-color: gold;
+  border: 1px solid inherit;
+  opacity: 0.7;
+  z-index: 0;
+}
+.section3 .gallary .card .number h1 {
+  color: gold;
+  margin-top: 0.5rem;
+}
+.section3 .gallary .card .flex {
+  position: absolute;
+  left: -1rem;
+  bottom: -1rem;
+  z-index: 1;
+  box-sizing: 0px 5px 10px #323023;
+  width: 70%;
+  height: max-content;
+  background-color: #323023;
+  border-radius: 8px;
+}
+.section3 .gallary .card .flex div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.section3 .gallary .card .flex p {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.section3 .gallary .card .img1 {
+  background-image: url("./img/ape2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section3 .gallary .card .img2 {
+  background-image: url("./img/ape7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section3 .gallary .card .img3 {
+  background-image: url("./img/ape8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section3 .play {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.section3 .play .icon2 {
+  font-size: 1.5rem;
+  color: gold;
+  border: 0.5px solid gold;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+.section3 .play .icon1 {
+  font-size: 0.5rem;
+  color: gray;
+  border: 0.5px solid gray;
+  padding: 1rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.section4 {
+  background-color: rgb(76, 67, 25);
+  background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(40, 37, 22) 8%);
+  width: 100%;
+  height: 120vh;
+  color: white;
+  padding: 2rem 10%;
+}
+.section4 .intro {
+  position: relative;
+  z-index: 2;
+}
+.section4 .intro h1 {
+  font-size: 6vw;
+}
+.section4 .intro p {
+  margin: 1rem 0rem;
+  font-size: 1.5vw;
+}
+.section4 .parent {
+  position: relative;
+  z-index: 0;
+}
+.section4 .parent .child {
+  position: relative;
+  perspective: 50px;
+  z-index: 0;
+  left: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2rem 2%;
+}
+.section4 .parent .child .text {
+  z-index: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(45deg);
+  box-shadow: 0px -4px 0px gold, 0px 4px 0px gold, -4px 0px 0px gold, 0px 0px 0px gold;
+  border-radius: 12px 2% 2% 12px;
+}
+.section4 .parent .child .text .li {
+  margin: 1.5rem 0rem 0.5rem 3rem;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.section4 .parent .child .text .li .egg {
+  width: 50px;
+  height: 50px;
+}
+.section4 .parent .child .text .li .icon1 {
+  background-image: url("./img/egg1-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.section4 .parent .child .text .li .icon2 {
+  background-image: url("./img/egg2-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.section4 .parent .child .text .li .icon3 {
+  background-image: url("./img/egg3-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.section4 .parent .child .text .li:first-child {
+  background-color: rgb(40, 37, 22);
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.section4 .parent .child .text .btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 8%;
+  height: 10vh;
+  padding: 1rem;
+}
+.section4 .parent .child .text .btn button {
+  margin-right: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid gold;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.section4 .parent .child .text .btn .one {
+  background-color: gold;
+}
+.section4 .parent .child .text .btn .two {
+  background-color: inherit;
+  border: 2px solid gold;
+  color: white;
+}
+.section4 .parent .child .box {
+  z-index: 0;
+  transform: rotateY(-0.3deg);
+  width: 50%;
+  height: 70vh;
+}
+.section4 .parent .child .box .figures {
+  position: absolute;
+  z-index: 3;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  bottom: 1rem;
+  right: 2.6rem;
+  background-color: rgba(56, 56, 53, 0.5);
+  backdrop-filter: blur(2px);
+  height: max-content;
+  padding: 1rem 1.7rem;
+  border-radius: 13px;
+}
+.section4 .parent .child .box .figures .boxx h3 {
+  color: rgb(172, 164, 164);
+  margin-bottom: 1rem;
+}
+.section4 .parent .child .box .figures .boxx p {
+  color: gold;
+}
+.section4 .parent .child .img {
+  position: relative;
+  z-index: 1;
+}
+.section4 .parent .child .img .imgshad {
+  position: absolute;
+  z-index: 2;
+  top: -14rem;
+  left: -7rem;
+  height: inherit;
+  width: 100%;
+  height: 115vh;
+  background-color: rgba(209, 177, 17, 0.5);
+  background: linear-gradient(180deg, rgb(18, 18, 18) 40%, rgb(40, 37, 22) 80%);
+  background-image: url("./img/ape5-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 195% 115%;
+  background-position: 51% 90%;
+  border-radius: 50px;
+}
+
+.section5 {
+  position: relative;
+  background-color: rgb(76, 67, 25);
+  background: linear-gradient(0deg, rgb(18, 18, 18) 40%, rgb(40, 37, 22) 56%, rgba(18, 18, 18, 0.3) 80%);
+  width: 100%;
+  height: 120vh;
+  color: white;
+  padding: 2rem 10%;
+}
+.section5 .flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+}
+.section5 .flex .box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.section5 .flex .title h1 {
+  font-size: 4vw;
+}
+.section5 .flex .icon1,
+.section5 .flex .icon2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: center;
+  color: gold;
+}
+.section5 .flex .icon1 {
+  width: 30px;
+  height: 30px;
+  border-color: gray;
+  color: gray;
+}
+.section5 .gallary {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.section5 .gallary .box {
+  border-top: 3px solid gold;
+  border-bottom: 3px solid inherit;
+  border-right: 3px solid gold;
+  border-left: 3px solid gold;
+  width: 30%;
+  height: 70vh;
+  padding: 3rem;
+  border-radius: 12px 12px 5px 5px;
+  position: relative;
+}
+.section5 .gallary .box .img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 30px black;
+  background-color: rgba(50, 48, 35, 0.5);
+}
+.section5 .gallary .box .img1 {
+  background-image: url("./img/ape3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section5 .gallary .box .img2 {
+  background-image: url("./img/ape8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section5 .gallary .box .img3 {
+  background-image: url("./img/ape6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section5 .gallary .box .product {
+  position: absolute;
+  margin-top: 1rem;
+  background-color: rgba(50, 48, 35, 0.1);
+  left: 40%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 9px;
+}
+.section5 .gallary .box .product h3 {
+  font-size: 1vw;
+}
+.section5 .gallary .box .product p {
+  color: gold;
+  font-size: 1.5vw;
+}
+.section5 .shad {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 10vh;
+  background-color: rgba(1, 1, 1, 0.5);
+  background: linear-gradient(0deg, rgb(40, 37, 22) 56%, rgb(18, 18, 18) 90%);
+  bottom: 2rem;
+  border-radius: 10px;
+}
+
+.section6 {
+  color: white;
+  padding: 1rem 10%;
+  background-color: rgba(255, 217, 0, 0.1);
+  box-shadow: inset 5px 5px 1000px rgb(0, 0, 0);
+}
+.section6 .intro {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.section6 .intro h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.section6 .intro p {
+  font-size: 1rem;
+  margin: 1rem 0rem;
+  color: gray;
+}
+.section6 .quest {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  border: 2px solid gold;
+  border-radius: 12px;
+  width: 80%;
+  padding: 2rem 3rem;
+  font-size: 2.5vw;
+  margin: 2rem 10%;
+}
+.section6 .quest .plus i {
+  font-size: 5rem;
+}
+
+.footer {
+  color: white;
+  padding: 1rem 10%;
+  background-color: rgba(255, 217, 0, 0.1);
+  box-shadow: inset 5px 5px 1000px rgb(0, 0, 0);
+  border-top: 1px solid gray;
+  padding: 4rem 10%;
+}
+.footer .flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.footer .flex .a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.footer .flex .a h1 {
+  color: gold;
+}
+.footer .flex .a .logo {
+  width: 60px;
+  height: 60px;
+  background-image: url("./img/ape-logo-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer .flex .b {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-content: left;
+  gap: 2rem;
+}
+.footer .flex .b div {
+  border: 1px solid gold;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: gold;
+  font-size: 2rem;
+}
+.footer .flex .b .inp {
+  padding: 0px;
+  border: none;
+  background-color: none;
+}
+.footer .flex .b .inp input {
+  border: 1px solid gold;
+  background-color: rgba(34, 33, 33, 0.5);
+  outline: none;
+  padding: 1rem 1.8rem;
+  border-radius: 8px;
+  margin-left: -13%;
+  font-synthesis: 2.1rem;
+}
+.footer .flex .b .twitter,
+.footer .flex .b .discord {
+  background-color: rgba(34, 33, 33, 0.5);
+  border: none;
+}
+.footer .flex .b .msg {
+  background-color: rgba(34, 33, 33, 0.5);
+}
+.footer .c {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */
